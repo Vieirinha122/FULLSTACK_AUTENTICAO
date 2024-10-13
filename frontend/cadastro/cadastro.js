@@ -9,7 +9,7 @@ registerForm.addEventListener("submit", async (e) => {
     const confirmpassword = document.getElementById("confirmpassword").value;
 
     try {
-        const response = await fetch("http://localhost:3000/auth/register", {
+        const response = await fetch("https://fullstack-autenticao.onrender.com/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
